@@ -11,6 +11,6 @@ IEEE Aswan Student Branch Website
     <li>Form validation</li>
   </ul>
   
-  <h3>If you want to check the website, click <a href="https://gazouly.github.io/IEEE-AswanSB/">here</a><h3>
+  <h3>If you want to check the website, click <a href="https://gazouly.github.io/IEEE-AswanSB/" target="_blank">here</a><h3>
 
 
