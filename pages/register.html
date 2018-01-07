@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IEEE AswanSB</title>
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="../img/logo2.png">
+    <!-- Website Properities (SEO) & Mobile Compatiblity -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="IEEE AswanSB" />
+    <meta name="keywords" content="IEEE, Aswan, Student branch, volunteering, Asterisk" />
+    <!-- Website Properities (SEO) & Mobile Compatiblity -->
+    <link rel="stylesheet" type="text/css" href="../dist/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="../dist/main.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans' />
+    <script type="text/javascript" src="../dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../dist/semantic.min.js"></script>
+    <script type="text/javascript" src="../dist/script.js"></script>
+    <!--[if lt IE 9]>
+<script src="../dist/html5shiv.min.js"></script>
+<script src="../dist/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="register" rel="3">
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="ui pointing menu inverted fixed nav-bar grid">
+                <a class="brand item" href="index.php">
+                    <h1>IEEE AswanSB</h1>
+                </a>
+                <div id="rightMenu" class="right menu">
+                    <a href="../index.html" class="item">
+                        <i class="home icon"></i> Home
+                    </a>
+                    <a href="blog.html" class="item">
+                        <i class="feed icon"></i> Blog
+                    </a>
+                    <a href="events.html" class="item">
+                        <i class="calendar icon"></i> Events
+                    </a>
+                    <a href="gallery.html" class="item">
+                        <i class="photo icon"></i> Gallery
+                    </a>
+                    <a href="about.html" class="item">
+                        <i class="info circle icon"></i> About
+                    </a>
+                    <a href="tv.html" class="item">
+                        <i class="desktop icon"></i> TV
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile tablet only row">
+            <div class="ui pointing menu inverted fixed nav-bar grid">
+                <a class="brand item" href="index.php">
+                    <h1>IEEE AswanSB</h1>
+                </a>
+                <div id="rightMenu" class="right menu open">
+                    <a id="m_btn" href="#" class="menu item">
+                        <i class="list layout icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="m_menu" class="ui vertical menu left demo vertical inverted sidebar labeled icon">
+                <a href="../index.html" class="item">
+                    <i class="home icon"></i> Home
+                </a>
+                <a href="blog.html" class="item">
+                    <i class="feed icon"></i> Blog
+                </a>
+                <a href="events.html" class="item">
+                    <i class="calendar icon"></i> Events
+                </a>
+                <a href="gallery.html" class="item">
+                    <i class="photo icon"></i> Gallery
+                </a>
+                <a href="about.html" class="item">
+                    <i class="info circle icon"></i> About
+                </a>
+                <a href="tv.html" class="item">
+                    <i class="desktop icon"></i> TV
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="thread">
+        <div class="ui container">
+            <div class="ui breadcrumb small"> <a href="index.php">Home</a> <i class="icon play divider"></i> <a href="<?php echo $GLOBALS['domain'].'?page=events'; ?>">Events</a> <i class="icon play divider"></i>
+                <div class="active section">Registeration</div>
+            </div>
+            <form class="ui form">
+                <h4 style="color:#000" class="ui dividing header">Text Inputs</h4>
+                <div class="field">
+                    <label>Text Input</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="shipping[first-name]" placeholder="First Name"> </div>
+                        <div class="field">
+                            <input type="text" name="shipping[last-name]" placeholder="Last Name"> </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="shipping[first-name]" placeholder="First Name"> </div>
+                <div class="field">
+                    <label>Password Input</label>
+                    <div class="fields">
+                        <div class="sixteen wide field">
+                            <input type="password" name="shipping[address]" placeholder="Password"> </div>
+                    </div>
+                </div>
+                <div class="ui form">
+                    <div class="field">
+                        <label>Text</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="field">
+                        <label>Short Text</label>
+                        <textarea rows="2"></textarea>
+                    </div>
+                </div>
+                <h4 style="color:#000" class="ui dividing header">Choices</h4>
+                <div class="field">
+                    <label>Choosing from a list</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="card[type]">
+                        <div class="default text">Type</div> <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item"> Visa </div>
+                            <div class="item"> American Express </div>
+                            <div class="item"> Discover </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="sixteen wide field">
+                        <label>Multiple Choices</label>
+                        <select name="skills" multiple="" class="ui fluid dropdown">
+                            <option value="">Skills</option>
+                            <option value="angular">Angular</option>
+                            <option value="css">CSS</option>
+                            <option value="design">Graphic Design</option>
+                            <option value="ember">Ember</option>
+                            <option value="html">HTML</option>
+                            <option value="ia">Information Architecture</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="meteor">Meteor</option>
+                            <option value="node">NodeJS</option>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="python">Python</option>
+                            <option value="rails">Rails</option>
+                            <option value="react">React</option>
+                            <option value="repair">Kitchen Repair</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="ui">UI Design</option>
+                            <option value="ux">User Experience</option>
+                        </select>
+                    </div>
+                </div>
+                <h4 style="color:#000" class="ui dividing header">Radio & Check boxes</h4>
+                <div class="ui form">
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>Checkbox</label>
+                        </div>
+                    </div>
+                    <div class="ui segment inline field">
+                        <div class="ui checkbox ">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>Checkbox</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui toggle checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>Toggle</label>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <div class="field">
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                <label>Do not include a receipt in the package</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui form">
+                    <div class="grouped fields">
+                        <label for="fruit">Select your second favorite fruit:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                <label>Apples</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Oranges</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Pears</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Grapefruit</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment grouped fields">
+                        <label for="fruit">Select your second favorite fruit:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                <label>Apples</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Oranges</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Pears</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                <label>Grapefruit</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 style="color:#000" class="ui dividing header">Buttons</h4>
+                <button class="ui button">Submit</button>
+                <button class="ui button blue">Submit</button>
+                <button class="ui button green">Submit</button>
+                <button class="ui button red">Submit</button>
+                <div class="ui buttons">
+                    <button class="ui button">Reset</button>
+                    <div class="or"></div>
+                    <button class="ui positive button">Submit</button>
+                </div>
+                <br>
+                <br>
+                <button class="ui button right labeled icon">Submit<i class="right arrow icon"></i></button>
+                <button class="ui button blue right labeled icon">Submit<i class="right arrow icon"></i> </button>
+                <button class="ui button green right labeled icon">Submit<i class="right arrow icon"></i></button>
+                <button class="ui button red right labeled icon">Submit<i class="right arrow icon"></i></button>
+
+                <br>
+                <br>
+                <button class="ui button labeled icon"><i class="edit icon"></i>Submit</button>
+                <button class="ui button blue labeled icon"><i class="edit icon"></i>Submit </button>
+                <button class="ui button green labeled icon"><i class="edit icon"></i>Submit</button>
+                <button class="ui button red labeled icon"><i class="edit icon"></i>Submit</button>
+                <br>
+                <br>
+                <input type="file">
+            </form>
+        </div>
+    </section>
+    <div id="footer" class="">
+        <div class="ui grid three column wide stackable">
+            <div class="column">
+                <div class="ui horizontal icon divider"> <i class="circular list icon"></i> </div>
+                <div class="ui link list sitemap">
+                    <a href="../index.html" class="item"> <i class="home icon"></i> Home </a>
+                    <a href="blog.html" class="item"> <i class="feed icon"></i> Blog </a>
+                    <a href="events.html" class="item"> <i class="calendar icon"></i> Events </a>
+                    <a href="gallery.html" class="item"> <i class="photo icon"></i> Gallery </a>
+                    <a href="about.html" class="item"> <i class="info circle icon"></i> About </a>
+                    <a href="tv.html" class="item"> <i class="desktop icon"></i> TV </a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui horizontal icon divider"> <i class="circular marker icon"></i> </div>
+                <h3>Reach Us</h3>
+                <p style="line-height: 1em;">Faculty of Engineering - Aswan - Egypt</p>
+                <p style="line-height: 1em;">(+2) 0111 - 9383 - 834 </p>
+
+                <a href="http://www.facebook.com/" class="ui circular facebook icon button"> <i class="facebook icon"></i> </a>
+                <a href="http://www.twitter.com/" class="ui circular twitter icon button"> <i class="twitter icon"></i> </a>
+                <a href="http://www.linkedin.com/" class="ui circular linkedin icon button"> <i class="linkedin icon"></i> </a>
+                <a href="http://www.youtube.com/" class="ui circular youtube icon button"> <i class="youtube icon"></i> </a>
+            </div>
+            <div class="column">
+                <div class="ui horizontal icon divider"> <i class="circular pencil icon"></i> </div>
+                <div class="ui feed small">
+                    <div class="event">
+                        <div class="label"> <img src="../img/avatar_80x80.png" alt="header" /> </div>
+                        <div class="content">
+                            <div class="date">Just Now</div>
+                            <div class="summary"><a href="#">Get Started with Semantic UI</a> Elliot Underwood</div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="label"> <img src="../img/avatar_80x80.png" alt="header" /> </div>
+                        <div class="content">
+                            <div class="date">3 hours ago</div>
+                            <div class="summary"><a href="#">How to use Google Search</a> Helen Raimond</div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="label"> <img src="../img/avatar_80x80.png" alt="header" /> </div>
+                        <div class="content">
+                            <div class="date">4 days ago</div>
+                            <div class="summary"><a href="#">Hello World</a> Jacklyen Sharp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights"> <span>Copyrights &copy; 2016 All Rights Reserved to</span> <a href="https://www.facebook.com/iGazouly">Gazouly</a></div>
+    </div>
+</body>
+
+</html>
